@@ -1,0 +1,172 @@
+.holidays-container {
+    max-width: 1200px;
+    margin: 60px auto 0 auto;
+    padding: 0 20px 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.holidays-heading {
+    text-align: center;
+    font-size: 2.7rem;
+    color: #e63946;
+    font-weight: 900;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.holidays-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 0 60px;
+    max-width: 1400px;
+    margin: 50px 0 50px 0;
+    justify-items: center;
+}
+
+@media (max-width: 768px) {
+    .holidays-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 20px;
+        margin: 30px 0;
+    }
+}
+
+.holidays-card {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 28px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(8px) saturate(1.2);
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    padding: 32px 24px;
+    cursor: pointer;
+    transition: transform 0.18s, box-shadow 0.18s, border 0.18s;
+    position: relative;
+    overflow: hidden;
+    min-width: 280px;
+    max-width: 350px;
+    min-height: 380px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .holidays-card {
+        min-width: 250px;
+        max-width: 280px;
+        min-height: 320px;
+        padding: 20px 16px;
+        margin: 0 auto;
+    }
+}
+
+.holidays-card:hover {
+    transform: translateY(-10px) scale(1.04);
+    box-shadow: 0 16px 48px rgba(230,57,70,0.18);
+    border: 2.5px solid #e63946;
+}
+
+.holidays-img {
+    width: 100%;
+    max-width: 280px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 16px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: #f8f9fa;
+    padding: 8px;
+}
+
+.holidays-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #a14a1b;
+    margin-bottom: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(230,57,70,0.08);
+}
+
+.holidays-btn {
+    background: #e63946;
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(230,57,70,0.08);
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.holidays-btn:hover {
+    background: #a14a1b;
+}
+
+/* Image Modal Styles */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-modal.active {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80vh;
+    object-fit: contain;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    animation: zoom 0.3s ease;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #e63946;
+    text-decoration: none;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}

@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Recipes from './pages/Recipes';
+import Popular from './pages/Popular';
+import HealthyDiet from './pages/HealthyDiet';
+import HolidaysSpecial from './pages/HolidaysSpecial';
+import Sessions from './pages/Sessions';
+import FAQ from './pages/FAQ';
+import About from './pages/About';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div id="main">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/recipes" element={<Recipes />} />
+          <Route path="/popular" element={<Popular />} />
+          <Route path="/healthy-diet" element={<HealthyDiet />} />
+          <Route path="/holidays-special" element={<HolidaysSpecial />} />
+          <Route path="/sessions" element={<Sessions />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

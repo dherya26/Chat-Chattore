@@ -1,0 +1,479 @@
+.sessions-container {
+    max-width: 1200px;
+    margin: 60px auto 0 auto;
+    padding: 0 20px 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sessions-header {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.sessions-heading {
+    font-size: 2.7rem;
+    color: #e63946;
+    font-weight: 900;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.sessions-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hero-section {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 28px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(8px) saturate(1.2);
+    -webkit-backdrop-filter: blur(8px) saturate(1.2);
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    padding: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero-title {
+    font-size: 2rem;
+    color: #a14a1b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.trial-badge {
+    background: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.trial-badge.clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.trial-badge.clickable:hover {
+    background: #c1121f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3);
+}
+
+.trial-badge.clickable:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(230, 57, 70, 0.2);
+}
+
+.session-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-items: center;
+}
+
+.session-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.session-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(230, 57, 70, 0.2);
+    border: 3px solid #e63946;
+}
+
+.session-card:hover .session-features {
+    animation: fadeInUp 0.3s ease-out;
+}
+
+.session-card:hover .feature {
+    transform: translateX(5px);
+    transition: transform 0.2s ease;
+}
+
+.session-card:hover .session-title {
+    color: #e63946;
+    transition: color 0.3s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0.8;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.session-icon {
+    font-size: 3.5rem;
+    color: #e63946;
+    margin-bottom: 25px;
+    text-align: center;
+    background: rgba(230, 57, 70, 0.1);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.session-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.session-desc {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.session-features {
+    text-align: left;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 8px 0;
+    font-size: 1.05rem;
+}
+
+.feature i {
+    color: #e63946;
+    margin-right: 10px;
+}
+
+.pricing-section {
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.pricing-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+    border-color: #e63946;
+}
+
+.pricing-card.popular {
+    border-color: #e63946;
+    position: relative;
+}
+
+.popular-tag {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: #e63946;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.price-period {
+    font-size: 1rem;
+    color: #666;
+    display: block;
+    text-align: center;
+}
+
+.price-features {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.price-feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price-feature i {
+    color: #e63946;
+    margin-right: 10px;
+}
+
+.registration-section {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 28px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(8px) saturate(1.2);
+    -webkit-backdrop-filter: blur(8px) saturate(1.2);
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.registration-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.registration-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #e63946;
+    box-shadow: 0 0 0 2px rgba(230, 57, 70, 0.2);
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input {
+    margin-right: 8px;
+}
+
+.submit-btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background: #c1121f;
+}
+
+.testimonials-section {
+    margin: 60px 0;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.testimonials-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.testimonial-location {
+    color: #777;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.faq-section {
+    margin: 60px 0;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.faq-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.faq-answer {
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .sessions-heading {
+        font-size: 2.2rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-section {
+        padding: 30px 20px;
+    }
+    
+    .hero-desc {
+        font-size: 1rem;
+    }
+    
+    .session-types,
+    .pricing-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .registration-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

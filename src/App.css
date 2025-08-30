@@ -59,7 +59,6 @@ body {
   animation: fadeDown 500ms ease-out both;
 }
 
-<<<<<<< HEAD
 /* Desktop navigation */
 .desktop-nav {
   display: flex;
@@ -142,34 +141,6 @@ body {
   
   .mobile-menu-btn {
     display: block;
-=======
-/* Mobile header styles */
-@media (max-width: 768px) {
-  #header {
-    height: 80px;
-    padding: 0 15px;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  
-  #logo {
-    height: 60px;
-    margin: 10px 10px 10px 0;
-  }
-  
-  .Text {
-    font-size: 0.9rem;
-    padding: 4px 8px;
-    gap: 4px;
-  }
-  
-  #contactdetails {
-    font-size: 0.8rem;
-  }
-  
-  .icon i {
-    font-size: 1.5rem;
->>>>>>> e3b3d8d49d9930bd342fa4b299436d7bf8cbc3bc
   }
 }
 
@@ -218,7 +189,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-<<<<<<< HEAD
 @media (max-width: 768px) {
   .dropdown-menu {
     min-width: 120px;
@@ -232,8 +202,7 @@ body {
   }
 }
 
-=======
->>>>>>> e3b3d8d49d9930bd342fa4b299436d7bf8cbc3bc
+
 .Text:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -321,13 +290,8 @@ body {
 
 @media (max-width: 768px) {
   .page-content {
-<<<<<<< HEAD
     padding: 10px;
     padding-top: 80px;
-=======
-    padding: 15px;
-    padding-top: 100px;
->>>>>>> e3b3d8d49d9930bd342fa4b299436d7bf8cbc3bc
   }
 }
 

@@ -453,14 +453,15 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .about-container {
-    padding: 60px 0 40px;
-    width: 100vw;
+    padding: 90px 15px 40px 15px;
+    width: 100%;
   }
   
   .about-heading {
     font-size: 2.2rem;
     margin-bottom: 30px;
-    width: 100vw;
+    width: 100%;
+    padding-top: 20px;
   }
   
   .about-content {
@@ -503,8 +504,8 @@
 @media (max-width: 576px) {
   .about-heading {
     font-size: 1.8rem;
-    padding: 0 15px 15px;
-    width: 100vw;
+    padding: 20px 15px 15px;
+    width: 100%;
   }
   
   .about-content {

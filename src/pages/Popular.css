@@ -8,6 +8,13 @@
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .popular-container {
+        margin: 90px auto 0 auto;
+        padding: 20px 15px 40px 15px;
+    }
+}
+
 .popular-heading {
     text-align: center;
     font-size: 2.7rem;
@@ -15,6 +22,14 @@
     font-weight: 900;
     margin-bottom: 40px;
     letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .popular-heading {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
 }
 
 .popular-grid {

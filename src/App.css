@@ -290,8 +290,8 @@ body {
 
 @media (max-width: 768px) {
   .page-content {
-    padding: 10px;
-    padding-top: 80px;
+    padding: 15px;
+    padding-top: 90px;
   }
 }
 
@@ -309,6 +309,8 @@ body {
     font-size: 1.8rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
+    margin-top: 20px;
+    padding-top: 10px;
   }
 }
 
@@ -960,6 +962,14 @@ body {
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  #page1 {
+    padding-top: 80px;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
 /* Animated hero background for a satisfying food theme */
 @keyframes heroGradient {
   0% { background-position: 0% 50%; }
@@ -1004,6 +1014,27 @@ body {
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  #content {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  
+  #box1, #box2 {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    margin: 0;
+  }
+  
+  #box1 img {
+    max-height: 250px;
+    width: auto;
+  }
 }
 
 #box1 {
@@ -1092,6 +1123,27 @@ body {
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 15px;
+  }
+  
+  .stats-container {
+    padding: 15px;
+  }
+  
+  .stats-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .stat-card {
+    padding: 15px 12px;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
   }
 }
 
@@ -1183,6 +1235,18 @@ body {
   display: flex;
   background-color: #fff8f0;
 }
+
+@media (max-width: 768px) {
+  #heading {
+    height: 15vh;
+    padding: 0 15px;
+  }
+  
+  #heading h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
 #heading h1 {
   animation: scaleIn 600ms ease both 200ms;
 }
@@ -1206,6 +1270,16 @@ body {
   margin-bottom: 18px;
   font-family: 'Georgia', serif;
   text-shadow: 0 4px 16px rgba(230,57,70,0.12), 0 1px 0 #fff;
+}
+
+@media (max-width: 768px) {
+  #line {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    padding: 0 15px;
+  }
 }
 .trending-container {
   overflow: hidden;
